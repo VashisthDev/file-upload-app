@@ -1,0 +1,18 @@
+    <span>DevVashisth</span>
+<body>
+    <form>
+    <input type="file" (change)="onFileChange($event)" multiple="false" accept=".xlsx" />
+    <p>Drag your files here or click in this area .</p>
+    </form>
+</body>
+<table>
+    <tbody>
+        <tr *ngFor="let row of data">
+                <td *ngFor="let cell of row">
+                        {{cell}}
+                </td>
+        </tr>
+    </tbody>
+</table>
+
+  
